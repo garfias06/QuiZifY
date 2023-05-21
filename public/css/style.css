@@ -1,0 +1,705 @@
+:root {
+  --neon-pink: #ff0080;
+  --neon-blue: #008AF6;
+  --neon-green: #26f600;
+  --neon-yellow: #F1F751;
+  --neon-purple: #7C66BB;
+  --dark-grey: #676767;
+  --white: #ffffff;
+  --chelsea: 'Chelsea Market', cursive;
+  --helv: 'Helvetica Neue', 'Helvetica', 'Arial';
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  z-index: 20;
+}
+
+body.cz-shortcut-listen {
+  /* Override any unwanted styles */
+  /* For example, you can set display:none to hide the element */
+  display: none !important;
+}
+
+/** HOMEPAGE **/
+h1 {
+  font-size: 80px;
+  font-family: 'Chelsea Market',
+    cursive;
+  text-align: center;
+  margin-top: -43px;
+  margin-bottom: .3em;
+  position: relative;
+}
+
+#navback {
+  font-size: 24px;
+  padding-left: 30px;
+  background-color: #d1d1d18d !important;
+  height: 3.1em;
+}
+
+#navbar-text {
+  font-size: 24px;
+  padding-left: 20px;
+  background-color: #d1d1d100 !important;
+}
+
+#spacer {
+  border-right: 1px solid rgba(83, 82, 82, 0.853);
+}
+
+#welcome {
+  font-size: 36px;
+  text-align: center;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+}
+
+#logo-text {
+  font-family: 'Chelsea Market',
+    cursive;
+  font-size: 68px;
+}
+
+#logo-text:hover {
+  cursor: default;
+  text-decoration: none;
+}
+
+#login-column {
+  display: flex;
+  margin-right: 2px !important;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.login {
+  font-size: 28px;
+  font-family: 'Chelsea Market', cursive;
+  border: none;
+  background-color: #E6E6E6 !important;
+}
+
+.login:hover {
+  color: var(--neon-purple);
+  text-shadow: 3px 1px #372b25;
+  transition: .2s ease-in-out;
+  transform: scale(1.3);
+}
+
+.logout {
+  font-size: 28px;
+  font-family: 'Chelsea Market', cursive;
+  border: none;
+  background-color: #E6E6E6 !important;
+}
+
+.logout:hover {
+  color: var(--neon-purple);
+  text-shadow: 3px 1px #372b25;
+  transition: .2s ease-in-out;
+  transform: scale(1.3);
+}
+
+.signup-form {
+  font-size: 28px;
+  font-family: 'Chelsea Market', cursive;
+  border: none;
+  background-color: #E6E6E6 !important;
+}
+
+.dropdown-header {
+  text-align: center;
+  font-family: var(--chelsea);
+  color: #2b2b2b;
+  font-size: 26px;
+  border-bottom: 1px solid #2b2b2b;
+}
+
+#rules {
+  background-color: #25f600a0;
+}
+
+#rules-para {
+  font-family: var(--helv);
+  padding-top: 12px;
+  font-size: 20px;
+  color: #2b2b2b;
+}
+
+.home-title {
+    margin-top: 0;
+      margin-bottom: 0;
+      padding-top: .1em;
+      padding-bottom: .1em;
+}
+
+.background-container {
+  position: relative;
+}
+
+.genre-dropdown {
+  justify-content: center;
+  align-items: center;
+}
+
+#ddButton {
+  font-family: var(--helv);
+  font-size: 23px;
+  background-color: #2b2b2b65;
+  margin-top: 28px;
+  color: black;
+  border: 1px solid black;
+}
+
+#ddButton:hover,
+#ddButton:active {
+  background-color: var(--neon-purple);
+  cursor: url('../assets/headphones.png'),
+    auto;
+  color: white;
+  box-shadow: none;
+}
+
+#genre-list {
+  background-color: var(--neon-yellow);
+  font-family: var(--helv);
+  font-size: 21px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#genre-li:hover {
+  background-color: var(--neon-yellow);
+  text-decoration: none;
+}
+
+.card-body {
+  height: 380px;
+}
+
+#g-card {
+  font-family: var(--helv);
+  padding: 18px;
+  font-size: 26px;
+}
+
+#g-notes {
+  font-size: var(--chelsea);
+  font-size: 24px;
+}
+
+#card-desc {
+  font-family: var(--helv);
+  font-size: 26px;
+  padding-top: 22px;
+  padding-bottom: 7px;
+  line-height: 2px;
+}
+
+#card-btn {
+  font-family: var(--helv);
+  position: relative;
+  width: 100%;
+  font-size: 24px;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
+}
+
+#card-btn:hover {
+  cursor: url('../assets/headphones.png'),
+    auto;
+  text-decoration: none !important;
+  background-color: black;
+  box-shadow: inset 0 0 3px 3px var(--neon-pink);
+  color: var(--neon-pink);
+}
+
+.boombox {
+  /* margin: 4.4em auto 5em auto; */
+  background-image: url('../../assets/boombox-muted.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  /* width: 100%;
+  padding-bottom: 20%; */
+}
+
+footer {
+  background-color: var(--neon-pink);
+  text-align: center;
+  height: 4.4rem;
+  margin-top: auto;
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#footer-text {
+  font-size: 24px !important;
+}
+
+/* - - - - - - - - - - - - - - - - - -  */
+/** PROFILE PAGE **/
+#song-queue {
+  font-family: 'Tilt Neon', cursive;
+  font-size: 60px;
+  margin-top: .1em;
+  color: #2b2b2bec;
+  text-shadow: 1px 1px 0 whitesmoke, 4px 3px 4px var(--neon-blue);
+  order: 1;
+}
+
+.table {
+  margin-top: .3em;
+  order: 2;
+}
+
+#table-contain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+table {
+  max-width: 56%;
+  justify-content: center;
+  border: 1px solid black !important;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+  font-size: 26px;
+}
+
+.track-col {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+thead {
+  background-color: rgba(0, 0, 0, 0.689);
+}
+
+tbody {
+  background-color: rgba(0, 0, 0, 0.386);
+}
+
+th,
+td {
+  text-align: center;
+  color: white !important;
+}
+
+.play-icon {
+  color: var(--neon-green) !important;
+}
+
+.delete-icon {}
+
+/* - - - - - - - - - - - - - - - - - -  */
+/** GAME BOARD **/
+.gameboard-title {
+  background-color: #2b2b2b !important;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: .1em;
+  padding-bottom: .1em;
+  color: rgb(230, 230, 230);
+  text-shadow: 3px 3px 3px var(--neon-pink);
+}
+
+#music-wild {
+  margin-bottom: -10px;
+}
+
+.wild-music {
+  /* margin: 4.4em auto 5em auto; */
+  background-image: url('../../assets/gameboard-bg.png');
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+  /* width: 99.1vw;
+  height: 100%;
+  z-index: -3;
+  padding-bottom: 20%; */
+}
+
+#game-textbox {
+  background-color: #7C66BB;
+  color: white;
+  width: 46em;
+  height: 10em;
+  border-radius: 18px;
+  text-align: center;
+  padding: 12px;
+  z-index: 2;
+}
+
+#game-textbox-name {
+  background-color: #F2AF2D;
+  color: white;
+  width: 46em;
+  height: 10em;
+  border-radius: 18px;
+  text-align: center;
+  padding: 12px;
+}
+
+#soundwave {
+  height: 75px;
+  width: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+#artist-image {
+  justify-content: center;
+}
+
+#image-choice:hover {
+  cursor: url('../assets/headphones.png'), auto;
+  transition: .2s ease-in-out;
+  transform: scale(1.1);
+}
+
+.name-choice {
+  background-color: rgba(0, 0, 0, 0.856);
+  color: white;
+  font-family: var(--helv);
+  font-size: 26px;
+  border-radius: 12px;
+}
+
+#play-btn-contain {
+}
+
+#audio-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+  font-size: 100px;
+  color: white;
+}
+
+#view-results {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.results-link {
+  font-size: 40px;
+  color: #46395c;
+  font-family: var(--chelsea);
+  background-color: #F2AF2D;
+  padding: 5px;
+}
+
+.results-link:hover {
+  text-decoration: none;
+  color: white !important;
+}
+/* .play {
+  font-family: 'Chelsea Market',
+    cursive;
+  font-size: 60px;
+  color: var(--white);
+  text-shadow: 2px 2px 2px #2b2b2b;
+} */
+
+.play-name {
+  font-family: 'Chelsea Market',
+    cursive;
+  font-size: 60px;
+  color: #46395c;
+  text-shadow: 2px 2px 2px #ffffff;
+}
+
+.game-text {
+  color: var(--white);
+  font-size: 33px;
+  text-shadow: 1px 1px 3px #2b2b2b;
+}
+
+.game-text-name {
+  color: #2B2B2B;
+  font-size: 33px;
+  text-shadow: 1px 1px 3px #ffffff;
+}
+
+#score-contain {
+  background-color: var(--neon-pink);
+  padding-bottom: 188px;
+}
+
+#score-header {
+  font-size: 60px;
+  font-family: var(--helv);
+  color: white;
+  padding-top: 15px;
+}
+
+#score-number {
+  font-size: 44px;
+  color: white;
+  margin-top: -3px;
+}
+
+#results-table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 55vw;
+}
+
+#song-results {
+  background-color: rgba(0, 0, 0, 0.746);
+  align-items: center;
+  justify-content: center;
+}
+
+#song-item {
+  text-align: center;
+}
+
+.play-again-btn {
+  display: flex;
+}
+
+#p-ag-btn {
+  background-color: #F7B52E;
+  font-family: var(--chelsea);
+  color: #2b2b2b;
+  text-shadow: 1px 1px 3px #ffffff;
+  font-size: 28px;
+}
+
+
+/* SOUNDWAVE ANIMATION*/
+/* https://github.com/smarttechtip/*/
+#wave-shadow {}
+
+.soundbar {
+  margin: 0;
+  padding: 2px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  box-shadow:
+    0 1px 1px 2px rgba(255, 255, 255, 0.753),
+    0 5px 5px 4px rgba(255, 255, 255, 0.5),
+    0 9px 9px 6px rgba(255, 255, 255, 0.2),
+    0 14px 14px 8px rgba(255, 255, 255, 0.05);
+}
+
+#soundbox {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.wave {
+  width: 3px;
+  height: 70px;
+  background: linear-gradient(50deg, #ff0080, white, #ff0080);
+  margin: 7px;
+  animation: wave 1s infinite linear;
+}
+
+.wave:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.wave:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.wave:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.wave:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.wave:nth-child(6) {
+  animation-delay: 1s;
+}
+
+.wave:nth-child(7) {
+  animation-delay: 1.2s;
+}
+
+.wave:nth-child(8) {
+  animation-delay: 0.2s;
+}
+
+.wave:nth-child(9) {
+  animation-delay: 0.4s;
+}
+
+.wave:nth-child(10) {
+  animation-delay: 0.6s;
+}
+
+.wave:nth-child(11) {
+  animation-delay: 0.8s;
+}
+
+.wave:nth-child(12) {
+  animation-delay: 1s;
+}
+
+.wave:nth-child(13) {
+  animation-delay: 1.2s;
+}
+
+.wave:nth-child(14) {
+  animation-delay: 0.2s;
+}
+
+.wave:nth-child(15) {
+  animation-delay: 0.4s;
+}
+
+.wave:nth-child(16) {
+  animation-delay: 0.6s;
+}
+
+.wave:nth-child(17) {
+  animation-delay: 0.8s;
+}
+
+.wave:nth-child(18) {
+  animation-delay: 1s;
+}
+
+.wave:nth-child(19) {
+  animation-delay: 1.2s;
+}
+
+.wave:nth-child(20) {
+  animation-delay: 0.2s;
+}
+
+.wave:nth-child(21) {
+  animation-delay: 0.4s;
+}
+
+.wave:nth-child(22) {
+  animation-delay: 0.6s;
+}
+
+.wave:nth-child(23) {
+  animation-delay: 0.8s;
+}
+
+.wave:nth-child(24) {
+  animation-delay: 1s;
+}
+
+.wave:nth-child(25) {
+  animation-delay: 1.2s;
+}
+
+.wave:nth-child(26) {
+  animation-delay: 0.2s;
+}
+
+.wave:nth-child(27) {
+  animation-delay: 0.4s;
+}
+
+.wave:nth-child(28) {
+  animation-delay: 0.6s;
+}
+
+.wave:nth-child(29) {
+  animation-delay: 0.8s;
+}
+
+.wave:nth-child(30) {
+  animation-delay: 1s;
+}
+
+.wave:nth-child(31) {
+  animation-delay: 1.2s;
+}
+
+.wave:nth-child(32) {
+  animation-delay: 0.2s;
+}
+
+.wave:nth-child(33) {
+  animation-delay: 0.4s;
+}
+
+.wave:nth-child(34) {
+  animation-delay: 0.6s;
+}
+
+.wave:nth-child(35) {
+  animation-delay: 0.8s;
+}
+
+.wave:nth-child(36) {
+  animation-delay: 1s;
+}
+
+.wave:nth-child(37) {
+  animation-delay: 1.2s;
+}
+
+.wave:nth-child(38) {
+  animation-delay: 0.2s;
+}
+
+.wave:nth-child(39) {
+  animation-delay: 0.4s;
+}
+
+.wave:nth-child(40) {
+  animation-delay: 0.6s;
+}
+
+.wave:nth-child(41) {
+  animation-delay: 0.8s;
+}
+
+.wave:nth-child(42) {
+  animation-delay: 1s;
+}
+
+.wave:nth-child(43) {
+  animation-delay: 1.2s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+
+}

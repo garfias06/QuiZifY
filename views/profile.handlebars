@@ -1,0 +1,22 @@
+  <div class="container-fluid" id="table-contain">
+    <p class="text-center" id="song-queue">Song Queue:</p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col" style="width: 22%">Remove</th>
+          <th scope="col" style="width: 56%" class="track-col">Track</th>
+          <th scope="col" style="width: 22%">Play</th>
+        </tr>
+      </thead>
+      <tbody>
+{{#each songs}}
+        <tr>
+          <th scope="row" class="delete-icon">⛔</th>
+          <td scope><a href="/songs/{{this.id}}">{{this.title}} by {{this.artist.name}}</a></td>
+          <td class="play-icon" data-id="{{this.id}}">▶︎</td>
+        </tr>
+      {{/each}}
+      </tbody>
+    </table>
+  </div>
+
